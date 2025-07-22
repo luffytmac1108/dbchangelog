@@ -1,0 +1,190 @@
+{
+	"info": {
+		"_postman_id": "3168cec3-7d43-432e-9a35-1b661225be88",
+		"name": "changelog",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "24990907"
+	},
+	"item": [
+		{
+			"name": "addProducts",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"mackBookPro\",\n    \"price\": \"10999\",\n    \"stock\":100\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/products",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"products"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getProduct",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"mackBookPro\",\n    \"price\": \"10999\",\n    \"stock\":100\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/products/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"products",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get all Product",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"mackBookPro\",\n    \"price\": \"10999\",\n    \"stock\":100\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/products/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"products",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "update product",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"mackBookPro\",\n    \"price\": \"10999\",\n    \"stock\":100\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/products/update/1?newPrice=9999&newStock=245&updatedBy=阳小伟",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"products",
+						"update",
+						"1"
+					],
+					"query": [
+						{
+							"key": "newPrice",
+							"value": "9999"
+						},
+						{
+							"key": "newStock",
+							"value": "245"
+						},
+						{
+							"key": "updatedBy",
+							"value": "阳小伟"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "update product fail",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"mackBookPro\",\n    \"price\": \"10999\",\n    \"stock\":100\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/products/update-fail/1?newPrice=9999&newStock=245&updatedBy=阳小伟",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"products",
+						"update-fail",
+						"1"
+					],
+					"query": [
+						{
+							"key": "newPrice",
+							"value": "9999"
+						},
+						{
+							"key": "newStock",
+							"value": "245"
+						},
+						{
+							"key": "updatedBy",
+							"value": "阳小伟"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
