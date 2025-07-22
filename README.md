@@ -1,2 +1,2 @@
 # dbchangelog
-监听db的update日志，使用ThreadLocal+aop+TransactionSynchronizationManager+TransactionSynchronizationAdapter进行无侵入实现
+利用mytatis的拦截器处理db的update操作，使用ThreadLocal+aop+TransactionSynchronizationManager+TransactionSynchronizationAdapter进行无侵入实现记录变更日志
