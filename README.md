@@ -1,0 +1,2 @@
+# dbchangelog
+监听db的update日志，使用ThreadLocal+aop+TransactionSynchronizationManager+TransactionSynchronizationAdapter进行无侵入实现
